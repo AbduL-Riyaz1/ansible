@@ -13,3 +13,13 @@
   - name: PLAY2 and Task2
     ansible.builtin.debug:
       msg: "Hello from PlAY2 and TASK2"
+
+- name: PLAY3
+  hosts: local
+  connection: local #connecting to own node no need of username or password
+  tasks:
+  - name: PLAY3 and Task3
+    ansible.builtin.debug:
+      msg: "Hello from PlAY3 and TASK3"
+
+
