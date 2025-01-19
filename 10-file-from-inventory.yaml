@@ -1,6 +1,5 @@
 - name: variables from inventory
   hosts: web
-  connection: local
   tasks:
   - name: course information
     ansible.builtin.debug:
