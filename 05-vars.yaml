@@ -2,7 +2,7 @@
   hosts: local
   connection: local
   vars:
-    Course: "Devsecops Weith AWS"
+    Course: "Devsecops With AWS"
     Duration: "120HRS"
     Tranier: "Siva"
   tasks:
