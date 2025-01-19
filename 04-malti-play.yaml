@@ -1,6 +1,6 @@
 - name: PLAY1
   hosts: local
-  connections: local #connecting to own node no need of username or password
+  connection: local #connecting to own node no need of username or password
   tasks:
   - name: PLAY1 and Task1
     ansible.builtin.debug:
@@ -8,8 +8,8 @@
 
 - name: PLAY2
   hosts: local
-  connections: local #connecting to own node no need of username or password
+  connection: local #connecting to own node no need of username or password
   tasks:
-  - name: PLAY2 and Task2
+  - name: PLAY2 and Task1
     ansible.builtin.debug:
-      msg: "Hello from PlAY2 and TASK2"
+      msg: "Hello from PlAY2 and TASK1"
