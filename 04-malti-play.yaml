@@ -23,3 +23,8 @@
       msg: "Hello from PlAY3 and TASK3"
 
 
+
+# ansible can manage it own nodes other tahn the differebt server nods as earlyer we give hosts: web by given local it check in inventory file if it is their it connets by givening a varable called connection: local
+
+
+
