@@ -10,6 +10,6 @@
   hosts: local
   connection: local #connecting to own node no need of username or password
   tasks:
-  - name: PLAY2 and Task1
+  - name: PLAY2 and Task2
     ansible.builtin.debug:
-      msg: "Hello from PlAY2 and TASK1"
+      msg: "Hello from PlAY2 and TASK2"
