@@ -1,7 +1,11 @@
 - name: varabiles
   hosts: local
   connection: local
+  vars:
+    Course: "Devsecops eith AWS"
+    Duration: "120HRS"
+    Tranier: "Siva"
   tasks:
   - name: print the verabile
     ansible.builtin.debug:
-      msg: "Couser is Devsecops with AWS, Duration is 120HRS, Tranier is Siva"
+      msg: "Couser is {{Course}} with AWS, Duration is {{Duration}}, Tranier is {{Tranier}}"
