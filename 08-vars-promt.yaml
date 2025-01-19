@@ -14,3 +14,9 @@
   - name: print course information
     ansible.builtin.debug:
       msg: "Course is {{Course}}, Duration is {{Duration}},Tranier is {{Tranier}}"
+
+
+
+
+# in prompt level variables you have to give in the server to maintain security 
+# by keeping private: false you can see the text 
