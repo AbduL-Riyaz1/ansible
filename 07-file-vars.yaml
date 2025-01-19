@@ -1,9 +1,9 @@
 - name: vars from files
   hosts: local
   connection: local
-  vars_files:
-    - vars.yaml
+  vars_files: #
+    - vars.yaml  #it gets the variables from the given file name  
   tasks:
-  - name: print the variables
+  - name: print crouse informatiom
     ansible.builtin.debug:
       msg: "Course is {{Course}}, Duration is {{Duration}},Tranier is {{Tranier}}"
