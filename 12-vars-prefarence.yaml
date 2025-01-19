@@ -11,5 +11,11 @@
     private: false
   tasks:
   - name: print the verabile
+    vars:
+      GREET: "TASK"
     ansible.builtin.debug:
       msg: "Hello from {{GREET}}"
+
+  
+#first prefrence is command line
+#second prefrence vaiables
