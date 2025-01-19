@@ -2,10 +2,10 @@
   hosts: local
   connection: local
   vars:
-    Course: "Devsecops eith AWS"
+    Course: "Devsecops Weith AWS"
     Duration: "120HRS"
     Tranier: "Siva"
   tasks:
   - name: print the verabile
     ansible.builtin.debug:
-      msg: "Couser is {{Course}} with AWS, Duration is {{Duration}}, Tranier is {{Tranier}}"
+      msg: "Couser is {{Course}}, Duration is {{Duration}}, Tranier is {{Tranier}}"
