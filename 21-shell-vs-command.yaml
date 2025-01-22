@@ -15,4 +15,51 @@
     ansible.builtin.debug:
       msg: "{{command_result}}"
 
+#output--------------------------------------------------------------------------------------------------------------------------------
+#   "msg": {
+#         "changed": true,
+#         "cmd": [
+#             "ls",
+#             "-ltr"
+#         ],
+#         "delta": "0:00:00.006938",
+#         "end": "2025-01-22 07:54:24.201442",
+#         "failed": false,
+#         "msg": "",
+#         "rc": 0,
+#         "start": "2025-01-22 07:54:24.194504",
+#         "stderr": "",
+#         "stderr_lines": [],
+#         "stdout": "total 136\n-rw-r--r-- 1 ec2-user ec2-user   581 Jan 22 05:29 06-tsak-var.yaml\n-rw-r--r-- 1 ec2-user ec2-user   286 Jan 22 05:29 05-vars.yaml\n-rw-r--r-- 1 ec2-user ec2-user   845 Jan 22 05:29 04-malti-play.yaml\n-rw-r--r-- 1 ec2-user ec2-user   300 Jan 22 05:29 03-nginx.yaml\n-rw-r--r-- 1 ec2-user ec2-user   125 Jan 22 05:29 02-hello.yaml\n-rw-r--r-- 1 ec2-user ec2-user   111 Jan 22 05:29 01-playbook.yaml\n-rw-r--r-- 1 ec2-user ec2-user   318 Jan 22 05:29 07-file-vars.yaml\n-rw-r--r-- 1 ec2-user ec2-user    74 Jan 22 05:29 vars.yaml\n-rw-r--r-- 1 ec2-user ec2-user   443 Jan 22 05:29 14-conditions.yaml\n-rw-r--r-- 1 ec2-user ec2-user   513 Jan 22 05:29 13-datatypes.yaml\n-rw-r--r-- 1 ec2-user ec2-user   512 Jan 22 05:29 12-vars-prefarence.yaml\n-rw-r--r-- 1 ec2-user ec2-user   222 Jan 22 05:29 11-vars-args.yaml\n-rw-r--r-- 1 ec2-user ec2-user   273 Jan 22 05:29 10-file-from-inventory.yaml\n-rw-r--r-- 1 ec2-user ec2-user   231 Jan 22 05:29 09-vars-inventory.yaml\n-rw-r--r-- 1 ec2-user ec2-user   567 Jan 22 05:29 08-vars-promt.yaml\n-rw-r--r-- 1 ec2-user ec2-user   148 Jan 22 05:44 15-facts.yaml\n-rw-r--r-- 1 ec2-user ec2-user   560 Jan 22 06:02 inventory.ini\n-rw-r--r-- 1 ec2-user ec2-user   336 Jan 22 06:04 16-conditions.yaml\n-rw-r--r-- 1 ec2-user ec2-user   200 Jan 22 06:09 17-loops.yaml\n-rw-r--r-- 1 ec2-user ec2-user   240 Jan 22 06:15 18-loops.yaml\n-rw-r--r-- 1 ec2-user ec2-user   360 Jan 22 06:29 19-loops.yaml\n-rw-r--r-- 1 ec2-user ec2-user  1474 Jan 22 07:32 20-filters.yaml\n-rw-r--r-- 1 ec2-user ec2-user 41935 Jan 22 07:46 facts.json\n-rw-r--r-- 1 ec2-user ec2-user   465 Jan 22 07:54 21-shell-vs-command.yaml",
+#         "stdout_lines": [
+#             "total 136",
+#             "-rw-r--r-- 1 ec2-user ec2-user   581 Jan 22 05:29 06-tsak-var.yaml",
+#             "-rw-r--r-- 1 ec2-user ec2-user   286 Jan 22 05:29 05-vars.yaml",
+#             "-rw-r--r-- 1 ec2-user ec2-user   845 Jan 22 05:29 04-malti-play.yaml",
+#             "-rw-r--r-- 1 ec2-user ec2-user   300 Jan 22 05:29 03-nginx.yaml",
+#             "-rw-r--r-- 1 ec2-user ec2-user   125 Jan 22 05:29 02-hello.yaml",
+#             "-rw-r--r-- 1 ec2-user ec2-user   111 Jan 22 05:29 01-playbook.yaml",
+#             "-rw-r--r-- 1 ec2-user ec2-user   318 Jan 22 05:29 07-file-vars.yaml",
+#             "-rw-r--r-- 1 ec2-user ec2-user    74 Jan 22 05:29 vars.yaml",
+#             "-rw-r--r-- 1 ec2-user ec2-user   443 Jan 22 05:29 14-conditions.yaml",
+#             "-rw-r--r-- 1 ec2-user ec2-user   513 Jan 22 05:29 13-datatypes.yaml",
+#             "-rw-r--r-- 1 ec2-user ec2-user   512 Jan 22 05:29 12-vars-prefarence.yaml",
+#             "-rw-r--r-- 1 ec2-user ec2-user   222 Jan 22 05:29 11-vars-args.yaml",
+#             "-rw-r--r-- 1 ec2-user ec2-user   273 Jan 22 05:29 10-file-from-inventory.yaml",
+#             "-rw-r--r-- 1 ec2-user ec2-user   231 Jan 22 05:29 09-vars-inventory.yaml",
+#             "-rw-r--r-- 1 ec2-user ec2-user   567 Jan 22 05:29 08-vars-promt.yaml",
+#             "-rw-r--r-- 1 ec2-user ec2-user   148 Jan 22 05:44 15-facts.yaml",
+#             "-rw-r--r-- 1 ec2-user ec2-user   560 Jan 22 06:02 inventory.ini",
+#             "-rw-r--r-- 1 ec2-user ec2-user   336 Jan 22 06:04 16-conditions.yaml",
+#             "-rw-r--r-- 1 ec2-user ec2-user   200 Jan 22 06:09 17-loops.yaml",
+#             "-rw-r--r-- 1 ec2-user ec2-user   240 Jan 22 06:15 18-loops.yaml",
+#             "-rw-r--r-- 1 ec2-user ec2-user   360 Jan 22 06:29 19-loops.yaml",
+#             "-rw-r--r-- 1 ec2-user ec2-user  1474 Jan 22 07:32 20-filters.yaml",
+#             "-rw-r--r-- 1 ec2-user ec2-user 41935 Jan 22 07:46 facts.json",
+#             "-rw-r--r-- 1 ec2-user ec2-user   465 Jan 22 07:54 21-shell-vs-command.yaml"
+#         ]
+#     }
+# }
+
+
 
