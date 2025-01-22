@@ -11,5 +11,5 @@
   - name: convert string to list
     vars:
       fruits: "apple, banana, mango, orange"
-    ansible.builtin.split:
+    ansible.builtin.debug:
       msg: "Fruits are: {{fruits | split(',')}}"
