@@ -1,4 +1,4 @@
-- name: filter
+- name: filters
   hosts: local
   connection: local
   tasks:
@@ -8,8 +8,8 @@
       msg: "Hello {{ person | default('Abdul')}}"
 
 
-- name: convert string to list
-  vars:
-    fruits: apple, banana, mango, orange
-  ansible.builtin.split:
-    msg: "Fruits are: {{fruits | split(",")}}"
+  - name: convert string to list
+    vars:
+      fruits: apple, banana, mango, orange
+    ansible.builtin.split:
+      msg: "Fruits are: {{fruits | split(",")}}"
