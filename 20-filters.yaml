@@ -43,3 +43,9 @@
       name: "AbduL RiYaz"
     ansible.builtin.debug:
       msg: "Hi {{ name | upper }}"
+
+  - name: find min and max number
+    vars:
+      number: [20,22,46,258,7896,25478,67896]
+    ansible.builtin.debug:
+      mag: "Min number: {{ number | min }}, Max number: {{ number | max }}"
