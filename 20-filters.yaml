@@ -21,4 +21,4 @@
         Duration: 10Hrs
         Tranier: xyz
     ansible.builtin.debug:
-      msg: "Course info: {course | dict2items }"
+      msg: "Course info: {{course | dict2items}}"
