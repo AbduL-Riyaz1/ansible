@@ -4,4 +4,12 @@
   tasks:
   - name: handle undifined variable
     ansible.builtin.debug:
+      #msg: "Hello {{ person}}" it give error here person is not defined
       msg: "Hello {{ person | default('Abdul')}}"
+
+
+- name: convert string to list
+  vars:
+    fruits: apple, banana, mango, orange
+  ansible.builtin.split:
+    msg: "Fruits are: {{fruits | split(",")}}"
