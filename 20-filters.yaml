@@ -37,3 +37,9 @@
       name: "AbduL RiYaz"
     ansible.builtin.debug:
       msg: "Hi {{ name | lower }}"
+
+  - name: upper to lower
+    vars:
+      name: "AbduL RiYaz"
+    ansible.builtin.debug:
+      msg: "Hi {{ name | upper }}"
