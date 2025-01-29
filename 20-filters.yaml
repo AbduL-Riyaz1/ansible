@@ -34,7 +34,7 @@
 
   - name: lower to upper
     tags:
-    - uppertolower
+    - uppertolower # it is a tag which can be used to run a specific tasks  (ansible-playbook -i inventory <filename> -t <tagname>)
     vars:
       name: "AbduL RiYaz"
     ansible.builtin.debug:
